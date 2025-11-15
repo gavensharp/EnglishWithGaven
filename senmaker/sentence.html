@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Maker</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .word-box {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+            cursor: move;
+            user-select: none;
+            border-radius: 5px;
+        }
+
+        .word-box.dragging {
+            opacity: 0.5;
+            background-color: #ddd;
+        }
+
+        #sentence-container {
+            min-height: 100px;
+            padding: 20px;
+            border: 2px dashed #666;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Arrange the words to make a sentence</h2>
+        <div id="sentence-container">
+            <div class="word-box" draggable="true">The</div>
+            <div class="word-box" draggable="true">cat</div>
+            <div class="word-box" draggable="true">sits</div>
+            <div class="word-box" draggable="true">on</div>
+            <div class="word-box" draggable="true">the</div>
+            <div class="word-box" draggable="true">mat</div>
+        </div>
+    </div>
+    <script>
+        // Shuffle words when page loads
+        window.onload = function() {
+            const container = document.getElementById('sentence-container');
+            const words = Array.from(container.children);
+            words.sort(() => Math.random() - 0.5);
+            words.forEach(word => container.appendChild(word));
+        };
+
+        // Add check button and result message
+        const checkButton = document.createElement('button');
+        checkButton.textContent = 'Check Sentence';
+        checkButton.style.margin = '20px';
+        checkButton.style.padding = '10px 20px';
+        const resultMessage = document.createElement('div');
+        document.querySelector('.container').appendChild(checkButton);
+        document.querySelector('.container').appendChild(resultMessage);
+
+        // Check sentence when button is clicked
+        checkButton.addEventListener('click', () => {
+            const currentSentence = Array.from(document.querySelectorAll('.word-box'))
+                .map(word => word.textContent)
+                .join(' ');
+            const correctSentence = 'The cat sits on the mat';
+
+            if (currentSentence === correctSentence) {
+                resultMessage.textContent = 'Correct! Well done!';
+                resultMessage.style.color = 'green';
+            } else {
+                resultMessage.textContent = 'Try again!';
+                resultMessage.style.color = 'red';
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const wordBoxes = document.querySelectorAll('.word-box');
+            let draggedItem = null;
+
+            wordBoxes.forEach(box => {
+                box.addEventListener('dragstart', function(e) {
+                    draggedItem = this;
+                    setTimeout(() => this.classList.add('dragging'), 0);
+                });
+
+                box.addEventListener('dragend', function() {
+                    this.classList.remove('dragging');
+                });
+
+                box.addEventListener('dragover', function(e) {
+                    e.preventDefault();
+                });
+
+                box.addEventListener('drop', function(e) {
+                    e.preventDefault();
+                    if (this !== draggedItem) {
+                        const allItems = [...document.querySelectorAll('.word-box')];
+                        const draggedIndex = allItems.indexOf(draggedItem);
+                        const droppedIndex = allItems.indexOf(this);
+
+                        if (draggedIndex < droppedIndex) {
+                            this.parentNode.insertBefore(draggedItem, this.nextSibling);
+                        } else {
+                            this.parentNode.insertBefore(draggedItem, this);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

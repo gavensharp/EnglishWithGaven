@@ -1,0 +1,25 @@
+// ...existing code...
+async function loadPartial(selector, url) {
+  const el = document.querySelector(selector);
+  if (!el) return;
+  try {
+    const res = await fetch(url, {cache: "no-cache"});
+    if (!res.ok) throw new Error('Failed to load ' + url);
+    const html = await res.text();
+    el.innerHTML = html;
+    // Execute any inline scripts inside the fetched partial if needed
+    el.querySelectorAll('script').forEach(oldScript => {
+      const script = document.createElement('script');
+      if (oldScript.src) script.src = oldScript.src;
+      else script.textContent = oldScript.textContent;
+      document.head.appendChild(script).parentNode.removeChild(script);
+    });
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadPartial('#site-header', 'partials/header.html');
+  loadPartial('#site-footer', 'partials/footer.html');
+});

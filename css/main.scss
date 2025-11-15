@@ -1,0 +1,441 @@
+// headings $green-700
+// button background $accent-color $green-500
+// card background $gray-400
+// font color $black
+// card border $green-400
+// button font color $white
+
+// :root {
+//   --green-700: #2f855a;    /* Dark green for headings */
+//   --green-500: #38a169;    /* Accent green for buttons */
+//   --gray-400: #cbd5e0;     /* Light grey for card background */
+//   --black: #000000;        /* Black for text */
+//   --green-400: #68d391;    /* Light green border for cards */
+//   --white: #ffffff;        /* White for button text */
+// }
+
+// /* Lighten the success color by 20% */
+// $lighter-success: lighten($success, 20%);
+
+// .btn-outline-success {
+//   color: $lighter-success;
+//   border-color: $lighter-success;
+
+//   &:hover {
+//     background-color: $lighter-success;
+//     color: white;
+//   }
+// }
+
+//Define your custom colors
+// $green-500: rgb(51, 187, 76);
+// $green-700: #2f855a;
+
+// // Custom variables
+// $green-700: #2f855a;
+// $green-500: #38a169;
+// $gray-400: #cbd5e0;
+
+// Define custom colors and fonts for headings
+// $headings-color: rgb(10, 106, 14);        // Custom dark color for headings
+// $headings-font-family: "Roboto", Arial, sans-serif;  // Custom font for headings
+// $headings-font-weight: 700;                 // Bold font weight for headings
+// $headings-line-height: 1.2;                 // Line height for headings
+
+// //Override Bootstrap's variables
+// $font-family-base: "Roboto", Arial, sans-serif;
+
+// Define custom colors, fonts, and heading styles
+$primary: rgb(10, 106, 14); // Light yellow-green
+$secondary: rgb(101, 213, 104); // Light green
+$tertiary: #333; //
+$accent-color: #ffffe0; // Light yellow
+
+// Override heading styles
+$headings-color: $primary;
+$headings-font-family: "Arial", sans-serif;
+$headings-font-weight: 700;
+//$headings-line-height: 1.2;
+
+// Override global font settings
+$font-family-base: "Roboto", sans-serif;
+$font-size-base: 1.2rem;
+$line-height-base: 1.5;
+$body-color: rgb(33, 37, 41); // Dark gray for text
+$body-bg: rgb(255, 255, 255); // White background
+
+// Override Bootstrap's theme colors map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "accent": $accent-color,
+  "danger": rgb(79, 76, 73),
+  "success": rgb(13, 134, 194),
+  "warning": rgb(210, 105, 30),
+  "info": rgb(19, 3, 197),
+);
+
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+// $custom-theme-colors: (
+// $primary: rgb(235, 239, 157);
+// $secondary: rgb(175, 243, 177);
+// $tertiary: #c2d5c0;
+// );
+
+// Import Bootstrap
+// Use a relative path from your SCSS file to the node_modules directory
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.nav-item .nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  background-color: $secondary;
+  border-radius: 10%;
+}
+
+// .hero {
+//   padding: 2x 0; /* Adds vertical padding */
+
+// }
+
+.hero-content {
+  text-align: center; /* Left-align the content */
+}
+
+.bg-tertiary {
+  background-color: $tertiary;
+}
+
+.hero-image video {
+  width: 80%; /* Adjust the width of the video */
+  object-fit: cover;
+  border-radius: 20px; /* Optional: adds rounded corners to the video */
+  border: 1px solid rgb(76, 186, 96);
+}
+
+
+@media (max-width: 768px) {
+  /* Adjust the layout on smaller screens */
+  .hero-content,
+  .hero-image video {
+    text-align: center;
+    //margin-bottom: 20px; /* Adds spacing between content and image on smaller screens */
+    max-height: 300px;
+  }
+}
+
+.experience {
+  background-color: #f9f9f9; /* Optional background for the section */
+}
+
+.experience .card {
+  border: 1px solid rgb(76, 186, 96); /* Add a subtle border */
+  border-radius: 8px; /* Rounded corners */
+}
+
+// .experience h2 {
+//   font-size: 2.5rem; /* Adjust heading size */
+// }
+
+.text-muted {
+  font-size: 0.9rem; /* Slightly smaller text for the years */
+}
+
+// .highlights {
+//   background-color: #f9f9f9; /* Optional background color */
+// }
+
+// .highlights h2 {
+//   font-size: 2.5rem;
+//   font-weight: bold;
+//   color: #2f855a; /* Optional custom color */
+// }
+
+.highlights h4 {
+  margin-top: 2rem;
+}
+
+.highlights p {
+  font-size: 1.1rem;
+  color: #333; /* Optional text color */
+}
+
+.highlights img {
+  border-radius: 50%; /* Optional rounded image style */
+}
+
+.skills h4 {
+  margin-top: -2rem;
+}
+
+// .skills {
+//   background-color: white; /* Optional background color */
+// }
+
+// .skills h2 {
+//   font-size: 2.5rem;
+//   font-weight: bold;
+//   color: #2f855a; /* Custom color for the heading */
+// }
+
+.skills p {
+  font-size: 1.1rem;
+  color: #333; /* Custom text color */
+}
+
+.skills img {
+  width: 8rem;
+}
+
+.services h4 {
+  margin-top: 2rem;
+}
+
+.services img {
+  width: 8rem;
+}
+
+.get-started {
+  margin-top: 0.5rem;
+}
+
+.get-started {
+  background-color: #f9f9f9; /* Same background color as the experience section */
+
+  .card {
+    border: 1px solid rgb(76, 186, 96); /* Same border as the experience cards */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s ease; /* Smooth shadow on hover */
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+    }
+  }
+
+  // h4 {
+  //   font-size: 2.5rem; /* Same heading size as the experience section */
+  //   margin-bottom: 2rem; /* Adjust the bottom margin */
+  // }
+
+  // h5 {
+  //   font-size: 1.5rem; /* Step heading size */
+  //   margin-bottom: 1rem; /* Adjust margin for better spacing */
+  // }
+
+  .card-text {
+    font-size: 1rem;
+    color: #666; /* Optional: muted text color for descriptions */
+  }
+
+  .btn-primary {
+    background-color: rgb(76, 186, 96); /* Green button */
+    border-color: rgb(76, 186, 96);
+    font-weight: bold;
+  }
+}
+
+footer.nav-link {
+  color: black !important;
+}
+
+footer.footer-container {
+  // set viewport height
+  min-height: 100vh;
+}
+
+.card-body {
+  border: 3px solid rgb(76, 186, 96);
+}
+
+// Calendar specific styles
+.calendar {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &-header {
+    background: #f8f9fa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+// Date cell styles
+.date-cell {
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.selected {
+    background-color: #0d6efd;
+    color: white;
+  }
+
+  &.today {
+    background-color: #e9ecef;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Time slot styles
+.time-column {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.time-slot {
+  padding: 5px;
+  border-bottom: 1px solid #dee2e6;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f8f9fa;
+  }
+
+  &.available {
+    background-color: #4fd66e;
+  }
+
+  &.booked {
+    background-color: #f8d7da;
+    cursor: not-allowed;
+  }
+
+  .half-hour {
+    border-top: 1px dashed #dee2e6;
+    padding: 5px;
+    margin-top: 5px;
+
+    &.available {
+      background-color: #d9d466;
+    }
+  }
+}
+
+// .schedule-container {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     padding: 20px;
+// }
+
+// .time-list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+// }
+
+// .time-slot {
+//     padding: 10px 0;
+//     border-bottom: 1px solid #eee;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .time-slot:last-child {
+//     border-bottom: none;
+// }
+
+// .availability-block {
+//     background-color: #e3f2fd;
+//     border-radius: 4px;
+//     padding: 8px;
+//     margin: 4px 0;
+//     font-size: 14px;
+// }
+
+// .modal {
+//     background-color: rgba(0, 0, 0, 0.5);
+// }
+
+// .modal-content {
+//     border-radius: 8px;
+//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+// }
+
+// .btn-add-availability {
+//     background-color: #4285f4;
+//     color: white;
+//     border: none;
+//     border-radius: 4px;
+//     padding: 8px 16px;
+// }
+
+// .btn-cancel {
+//     background-color: #f1f3f4;
+//     color: #3c4043;
+//     border: none;
+//     border-radius: 4px;
+//     padding: 8px 16px;
+// }
+
+//         .calendar {
+//             background: white;
+//             border-radius: 8px;
+//             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+//         }
+
+//         .date-cell {
+//             cursor: pointer;
+//             transition: background-color 0.2s;
+//         }
+
+//         .date-cell:hover {
+//             background-color: #f0f0f0;
+//         }
+
+//         .date-cell.selected {
+//             background-color: #0d6efd;
+//             color: white;
+//         }
+
+//         .date-cell.today {
+//             background-color: #e9ecef;
+//         }
+
+//         .time-column {
+//             border: 1px solid #dee2e6;
+//             border-radius: 4px;
+//             padding: 10px;
+//         }
+
+//         .time-slot {
+//             padding: 5px;
+//             border-bottom: 1px solid #dee2e6;
+//             cursor: pointer;
+//         }
+
+//         .time-slot:hover {
+//             background-color: #f8f9fa;
+//         }
+
+//         .time-slot.available {
+//             background-color: #4fd66e;
+//         }
+
+//         .half-hour.available {
+//     background-color: #d9d466;
+// }
+
+//         .time-slot.booked {
+//             background-color: #f8d7da;
+//             cursor: not-allowed;
+//         }
+
+//         .half-hour {
+//             border-top: 1px dashed #dee2e6;
+//             padding: 5px;
+//             margin-top: 5px;
+//         }

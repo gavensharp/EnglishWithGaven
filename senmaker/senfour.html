@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentence Maker</title>
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="/Web-Dev-My-Projects/EnglishwithGaven/VersionOne/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="/Web-Dev-My-Projects/EnglishwithGaven/VersionOne/css/main.css" />
+</head>
+<body>
+  <div class="container my-5">
+    <!-- Repeat this block for each sentence -->
+    <div class="sentence-exercise mb-5">
+      <h1 class="fs-3 mb-5 text-center">Sentence Maker - Beginner Level (A1-A2)</h1>
+      <h2 class="fs-4 mb-4">Move the words to make a correct sentence</h2>
+      <h3 class="fs-5 mb-1">Sentence 1</h3>
+      
+      <div class="row p-3 border border-dashed rounded mb-2 sentence-container">
+        <!-- Image Column -->
+        <div class="col-12 col-md-6 order-md-2">
+          <img src="/Web-Dev-My-Projects/EnglishwithGaven/Images/Cat on Table.jpg" class="img-fluid" alt="Cat on the table" style="max-width: 15rem;">
+        </div>
+        
+        <!-- Words Column -->
+        <div class="col-12 col-md-6 order-md-1 words-column">
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">The</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">cat</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">sits</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">on</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">the</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">table</div>
+        </div>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="check-btn btn btn-primary btn-sm">Check Sentence</button>
+      </div>
+      <div class="result-msg mt-3 text-center"></div>
+    </div>
+    <!-- End sentence block -->
+     <!-- Sentence Exercise 2 -->
+    <div class="sentence-exercise mb-5">
+      <h1 class="fs-3 mb-5 text-center">Sentence Maker - Beginner Level (A1-A2)</h1>
+      <h2 class="fs-4 mb-4">Move the words to make a correct sentence</h2>
+      <h3 class="fs-5 mb-1">Sentence 2</h3>
+      
+      <div class="row p-3 border border-dashed rounded mb-2 sentence-container">
+        <!-- Image Column -->
+        <div class="col-12 col-md-6 order-md-2">
+          <img src="/Web-Dev-My-Projects/EnglishwithGaven/Images/Cat on Table.jpg"
+               class="img-fluid"
+               alt="Cat on the table"
+               style="max-width: 15rem;">
+        </div>
+        
+        <!-- Words Column -->
+        <div class="col-12 col-md-6 order-md-1 words-column">
+          <!-- You can change the words order if you want a different correct sentence! -->
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">The</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">table</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">is</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">under</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">the</div>
+          <div class="word-box d-inline-block p-2 m-1 bg-light border border-dark rounded" draggable="true">cat</div>
+        </div>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="check-btn btn btn-primary btn-sm">Check Sentence</button>
+      </div>
+      <div class="result-msg mt-3 text-center"></div>
+    </div>
+  </div>
+  
+
+  <!-- Bootstrap 5 JS Bundle (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="senfour.js" defer></script>
+</body>
+</html>

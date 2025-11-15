@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Question Test</title>
+    <style>
+        .question {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .feedback {
+            margin-top: 10px;
+            display: none;
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compound Question Test</h1>
+    
+    <div class="question">
+        <p>Choose the correct compound word:</p>
+        <div class="options">
+            <input type="radio" name="compound" value="sun flower"> sunflower<br>
+            <input type="radio" name="compound" value="air plane"> airplane<br>
+            <input type="radio" name="compound" value="water fall"> waterfall<br>
+            <input type="radio" name="compound" value="tooth brush"> toothbrush
+        </div>
+        <button onclick="checkAnswer()">Check Answer</button>
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const selected = document.querySelector('input[name="compound"]:checked');
+            const feedback = document.getElementById('feedback');
+            feedback.style.display = 'block';
+            
+            if (!selected) {
+                feedback.textContent = "Please select an answer";
+                feedback.className = 'feedback incorrect';
+                return;
+            }
+
+            if (selected.value === "sun flower") {
+                feedback.textContent = "Correct! 'Sunflower' is a compound word.";
+                feedback.className = 'feedback';
+            } else {
+                feedback.textContent = "Incorrect. Try again!";
+                feedback.className = 'feedback incorrect';
+            }
+        }
+    </script>
+</body>
+</html>
