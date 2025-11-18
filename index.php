@@ -6,14 +6,15 @@ session_start();
 <html lang="en">
 
 <head>
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>English with Gaven - Home</title>
   <?php include 'partials/head-meta.php'; ?>
-  <link rel="stylesheet" href="css/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/video.js"></script>
+  <
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/video.js"></script>
 
 
 </head>
@@ -153,12 +154,12 @@ session_start();
       </div>
     </section>
 
-    <section id="pricing" class="bg-light mt-5 px-4">
+    <section id="pricing" class="bg-white mt-5 mb-5">
       <div class="container-lg">
         <h2 class="fs-4 text-center">Pricing Plans</h2>
-        <p class="text-center text-muted mb-5">Tailored for students, professionals and families. Schedule 60-minute sessions or 30-minute sessions. All plans include personalized lesson plans and progress tracking.</p>
+        <p class="text-center text-muted mb-3 py-2">Tailored for students, professionals and families. Schedule 60-minute sessions or 30-minute sessions. All plans include personalized lesson plans and progress tracking.</p>
       </div>
-      <div class="row my-5 align-items-center justify-content-center">
+      <div class="row my-3 align-items-center justify-content-center">
         <!-- Adult Professional Plan -->
         <div class="col-8 col-lg-4 col-xl-3">
           <div class="card border-0">
@@ -194,15 +195,57 @@ session_start();
           </div>
         </div>
       </div>
-      <div class="text-center mb-5">
+      <div class="text-center">
         <p class="text-muted">Free 10 minute trial lesson included. Get started today!</p>
       </div>
     </section>
 
   </main>
 
-  <footer class="bg-light mb-5">
-    <?php include 'partials/footer.php'; ?>
+  <footer class="bg-white mb-4 py-4">
+    <div class="container">
+      <div class="row text-center text-md-center">
+        <!-- Logo Section -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="footer-logo">
+            <img src="/site-images/logo.png" alt="English with Gaven Logo" class="img-fluid mb-3" style="max-width: 100px;">
+          </div>
+          <p>English with Gaven &copy; 2025</p>
+        </div>
+
+        <!-- Footer Links Section -->
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <!-- Account Links Column -->
+            <div class="col-6 col-md-4">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/php/login.php" class="nav-link text-dark text-decoration-none">Login</a></li>
+                <li class="nav-item mb-2"><a href="/signup.php" class="nav-link text-dark text-decoration-none">Sign Up</a></li>
+                <li class="nav-item mb-2"><a href="/contact.php" class="nav-link text-dark text-decoration-none">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Navigation Links Column -->
+            <div class="col-6 col-md-4">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/index.php" class="nav-link text-dark text-decoration-none">Home</a></li>
+                <li class="nav-item mb-2"><a href="/about.php" class="nav-link text-dark text-decoration-none">About</a></li>
+                <li class="nav-item mb-2"><a href="/grammar/prepositions/beginner/prepbasic.php" class="nav-link text-dark text-decoration-none">Grammar</a></li>
+              </ul>
+            </div>
+
+            <!-- Legal Links Column -->
+            <div class="col-6 col-md-4 mt-4 mt-md-0">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="/faq.php" class="nav-link text-dark text-decoration-none">FAQ</a></li>
+                <li class="nav-item mb-2"><a href="/terms.php" class="nav-link text-dark text-decoration-none">Terms of Service</a></li>
+                <li class="nav-item mb-2"><a href="/privacy.php" class="nav-link text-dark text-decoration-none">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>
