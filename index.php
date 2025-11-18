@@ -19,69 +19,9 @@ session_start();
 
 <body>
 
-  <header class="header">
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
-      <div class="container-fluid mt-2 mb-1">
-        <!-- Logo aligned to the left -->
-        <a class="navbar-brand ms-3" href="index.php">
-          <img src="site-images/logo.png"
-            alt="English with Gaven Logo"
-            class="img-fluid"
-            style="max-width: 100px" />
-        </a>
-
-        <!-- Navbar Toggler for Mobile Views -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Nav links aligned to the right -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <!-- 'ms-auto' pushes links to the right -->
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold text-dark active" href="index.php">Home</a>
-            </li>
-
-            <li class="nav-item dropdown me-3">
-              <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="grammarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Grammar
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="grammarDropdown">
-                <li><a class="dropdown-item" href="grammar/prepositions/beginner/prepbasic.html">Prepositions A1-A2</a></li>
-                <li><a class="dropdown-item" href="grammar/prepositions/intermediate/intermepreps.html">Prepositions B1-B2</a></li>
-                <li><a class="dropdown-item" href="grammar/prepositions/advanced/advanprep.html">Prepositions C1-C2</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold text-dark" href="about.html">About</a>
-            </li>
-
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold text-dark" href="contact.html">Contact</a>
-            </li>
-
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold text-dark" href="php/login.php">Login</a>
-            </li>
-
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold text-dark" href="signup.html">Sign Up</a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<header class="header">
+  <?php include 'partials/navbar.php'; ?>
+</header>
 
   <main>
 
