@@ -41,7 +41,7 @@ $current_page_html = basename($_SERVER['PHP_SELF'], '.html');
                 </li>
 
                 <li class="nav-item me-3">
-                    <a class="nav-link text-dark <?php echo ($current_page == 'signup') ? 'text-decoration-underline' : 'text-decoration-none'; ?>" href="/signup.html">Sign Up</a>
+                    <a class="nav-link text-dark <?php echo ($current_page == 'signup') ? 'text-decoration-underline' : 'text-decoration-none'; ?>" href="/signup.php">Sign Up</a>
                 </li>
             </ul>
         </div>

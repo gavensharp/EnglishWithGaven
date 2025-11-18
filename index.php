@@ -6,22 +6,23 @@ session_start();
 <html lang="en">
 
 <head>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <title>English with Gaven - Home</title>
+  <?php include 'partials/head-meta.php'; ?>
   <link rel="stylesheet" href="css/main.css">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/video.js"></script>
 
-  <title>English with Gaven - Home</title>
+
 </head>
 
 <body>
 
-<header class="header">
-  <?php include 'partials/navbar.php'; ?>
-</header>
+  <header class="header">
+    <?php include 'partials/navbar.php'; ?>
+  </header>
 
   <main>
 
@@ -201,58 +202,7 @@ session_start();
   </main>
 
   <footer class="bg-light mb-5">
-    <div class="container">
-      <div class="row text-center text-md-center">
-        <!-- Logo Section -->
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <div class="footer-logo">
-            <img src="site-images/logo.png" alt="English with Gaven Logo" class="img-fluid mb-3" style="max-width: 100px;">
-          </div>
-          <p>English with Gaven &copy; 2025</p>
-        </div>
-
-        <!-- Footer Links Section -->
-        <div class="col-12 col-md-8">
-          <div class="row">
-            <!-- Account Links Column -->
-            <div class="col-6 col-md-4">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="php/login.php" class="nav-link fw-bold text-dark">Login</a></li>
-                <li class="nav-item mb-2"><a href="signup.html" class="nav-link fw-bold text-dark">Sign Up</a></li>
-                <li class="nav-item mb-2"><a href="contact.html" class="nav-link fw-bold text-dark">Contact</a></li>
-              </ul>
-            </div>
-
-            <!-- Navigation Links Column -->
-            <div class="col-6 col-md-4">
-              <ul class="nav flex-column">
-                <li class="nav-item dropdown me-3">
-                  <a class="nav-link fw-bold text-dark dropdown-toggle" href="#" id="footerGrammarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Grammar
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="footerGrammarDropdown">
-                    <li><a class="dropdown-item" href="grammar/prepositions/beginner/prepbasic.html">Prepositions A1-A2</a></li>
-                    <li><a class="dropdown-item" href="grammar/prepositions/intermediate/intermepreps.html">Prepositions B1-B2</a></li>
-                    <li><a class="dropdown-item" href="grammar/prepositions/advanced/advanprep.html">Prepositions C1-C2</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item mb-2"><a href="index.php" class="nav-link fw-bold text-dark">Home</a></li>
-                <li class="nav-item mb-2"><a href="about.html" class="nav-link fw-bold text-dark">About</a></li>
-              </ul>
-            </div>
-
-            <!-- Legal Links Column -->
-            <div class="col-6 col-md-4 mt-4 mt-md-0">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="faq.html" class="nav-link fw-bold text-dark">FAQ</a></li>
-                <li class="nav-item mb-2"><a href="terms.html" class="nav-link fw-bold text-dark">Terms of Service</a></li>
-                <li class="nav-item mb-2"><a href="privacy.html" class="nav-link fw-bold text-dark">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php include 'partials/footer.php'; ?>
   </footer>
 
 </body>
