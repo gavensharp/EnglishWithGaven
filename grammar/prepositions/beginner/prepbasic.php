@@ -27,7 +27,7 @@
 
   <link href="../../../css/main.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../questionsets/allqcheck.js" defer></script>
+  <script src="../../scripts/grammar-validator.js" defer></script>
 </head>
 
 <body>
@@ -282,7 +282,7 @@
                   <select id="answer5" class="grammar-question form-select d-inline w-auto" data-correct="with">
                     <option value="blank">____</option>
                     <option value="with">with</option>
-                    <option value="by">by</option>
+                    <option value="on">on</option>
                     <option value="to">to</option>
                   </select>
                 </span> his friend.
@@ -397,13 +397,13 @@
             <div class="card p-3">
               <h3 class="fs-5 mb-3">Question 10</h3>
               <p class="mb-0">
-                The umbrella is
+                The umbrella is hanging
                 <span id="preposition10">
-                  <select id="answer10" class="grammar-question form-select d-inline w-auto" data-correct="by">
+                  <select id="answer10" class="grammar-question form-select d-inline w-auto" data-correct="on">
                     <option value="blank">____</option>
                     <option value="by">by</option>
                     <option value="next to">next to</option>
-                    <option value="behind">behind</option>
+                    <option value="on">on</option>
                   </select>
                 </span> the door.
               </p>
@@ -491,11 +491,11 @@
               <p class="mb-0">
                 The penguin jumps
                 <span id="preposition14">
-                  <select id="answer14" class="grammar-question form-select d-inline w-auto" data-correct="onto">
+                  <select id="answer14" class="grammar-question form-select d-inline w-auto" data-correct="on">
                     <option value="blank">____</option>
-                    <option value="onto">onto</option>
-                    <option value="into">into</option>
-                    <option value="above">behind</option>
+                    <option value="on">on</option>
+                    <option value="in">in</option>
+                    <option value="behind">behind</option>
                   </select>
                 </span> the ice.
               </p>
@@ -517,8 +517,8 @@
                   <select id="answer15" class="grammar-question form-select d-inline w-auto" data-correct="over">
                     <option value="blank">____</option>
                     <option value="over">over</option>
-                    <option value="onto">onto</option>
-                    <option value="above">above</option>
+                    <option value="in">in</option>
+                    <option value="at">at</option>
                   </select>
                 </span> the rock.
               </p>

@@ -27,7 +27,7 @@
 
   <link href="../../../css/main.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../questionsets/allqcheck.js" defer></script>
+  <script src="../../scripts/grammar-validator.js" defer></script>
 </head>
 
 <body>
@@ -344,7 +344,7 @@
                 When I walk my dog, she always walks
                 <select class="grammar-question form-select d-inline w-auto" data-correct="beside">
                   <option value="blank">____</option>
-                  <option value="by">by</option>
+                  <option value="above">above</option>
                   <option value="beside">beside</option>
                   <option value="under">under</option>
                 </select>
