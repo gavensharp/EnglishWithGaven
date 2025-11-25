@@ -575,6 +575,58 @@
 
         </div>
       </div>
+
+      <!-- Exercise Controls -->
+      <div id="exercise-controls" class="text-center my-5 py-4 border-top">
+        <div class="mb-3">
+          <span id="progress-indicator" class="badge bg-secondary fs-6">
+            Answered: 0/20
+          </span>
+        </div>
+
+        <button id="check-score-btn" class="btn btn-outline-dark btn-lg border-secondary border-2 me-3">
+          📊 Check Score
+        </button>
+
+        <button id="try-again-btn" class="btn btn-outline-dark btn-lg border-secondary border-2">
+          🔄 Try Again
+        </button>
+
+        <div id="score-display" class="mt-4" style="display: none;">
+          <!-- Score will be displayed here -->
+        </div>
+      </div>
+
+      <!-- Score Modal -->
+      <div class="modal fade" id="scoreModal" tabindex="-1" aria-labelledby="scoreModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-accent text-white">
+              <h5 class="modal-title" id="scoreModalLabel">📊 Your Results</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center py-4">
+              <div id="score-emoji" class="display-1 mb-3">🎉</div>
+              <h3 id="score-feedback" class="mb-3">Excellent work!</h3>
+              <div class="score-display mb-3">
+                <span id="score-number" class="display-4 fw-bold text-success">15</span>
+                <span class="display-6 text-muted">/</span>
+                <span id="total-questions" class="display-6 text-muted">15</span>
+              </div>
+              <div class="progress mb-3" style="height: 30px;">
+                <div id="score-progress" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <span class="fw-bold" id="score-percentage">0%</span>
+                </div>
+              </div>
+              <p id="score-message" class="text-muted">Keep up the great work!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </section>
 
     <footer class="bg-light mb-5">
