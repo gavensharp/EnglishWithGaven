@@ -12,12 +12,24 @@
         Grammar
     </a>
     <ul class="dropdown-menu" aria-labelledby="grammarDropdown">
-        <li><a class="dropdown-item" href="/grammar/prepositions/beginner/prepbasic.php">Prepositions A1-A2</a></li>
-        <li><a class="dropdown-item" href="/grammar/prepositions/intermediate/intermepreps.php">Prepositions B1-B2</a></li>
-        <li><a class="dropdown-item" href="/grammar/prepositions/advanced/advanprep.php">Prepositions C1-C2</a></li>
+        <!-- Prepositions Section -->
+        <li>
+            <h6 class="dropdown-header">Prepositions</h6>
+        </li>
+        <li><a class="dropdown-item" href="/grammar/prepositions/beginner/prepbasic.php">Beginner (A1-A2)</a></li>
+        <li><a class="dropdown-item" href="/grammar/prepositions/intermediate/intermepreps.php">Intermediate (B1-B2)</a></li>
+        <li><a class="dropdown-item" href="/grammar/prepositions/advanced/advanprep.php">Advanced (C1-C2)</a></li>
+
         <li>
             <hr class="dropdown-divider">
         </li>
-        <li><a class="dropdown-item disabled" href="#">More coming soon...</a></li>
+
+        <!-- Tense Forms Section -->
+        <li>
+            <h6 class="dropdown-header">Tense Forms</h6>
+        </li>
+        <li><a class="dropdown-item" href="/grammar/tense-forms/beginner/tenses-basic.php">Beginner (A1-A2)</a></li>
+        <li><a class="dropdown-item" href="/grammar/tense-forms/intermediate/tenses-intermediate.php">Intermediate (B1-B2)</a></li>
+        <li><a class="dropdown-item" href="/grammar/tense-forms/advanced/tenses-advanced.php">Advanced (C1-C2)</a></li>
     </ul>
 </li>

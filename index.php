@@ -11,9 +11,9 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>English with Gaven - Home</title>
   <?php include 'partials/head-meta.php'; ?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    </script>
-    <script src="js/video.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/video.js"></script>
 
 
 </head>
@@ -246,6 +246,8 @@ session_start();
       </div>
     </div>
   </footer>
+  
+
 
 </body>
 
