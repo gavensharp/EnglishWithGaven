@@ -36,7 +36,7 @@ session_start();
 
             <p>Premium Online English Tutoring, Customized for Your Success</p>
 
-            <a href="signup.html">
+            <a href="signup.php" class="text-decoration-none">
               <button class="btn btn-primary mt-3">Get Started</button>
             </a>
           </div>
@@ -166,7 +166,7 @@ session_start();
               <h3 class="fs-5 card-title">Starter Plan</h3>
               <p class="lead text-muted">One hour per week</p>
               <p class="display-7 my-4 text-primary fw-bold">$119/month</p>
-              <a href="signup.html" class="btn btn-outline-primary btn-lg mt-3">Get Started</a>
+              <a href="signup.php" class="btn btn-outline-primary btn-lg mt-3">Get Started</a>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ session_start();
               <h3 class="fs-5 card-title">Immersion Plan</h3>
               <p class="lead text-muted">Two hours per week</p>
               <p class="display-6 my-4 text-primary fw-bold">$199/month</p>
-              <a href="signup.html" class="btn btn-outline-primary btn-lg mt-3">Get Started</a>
+              <a href="signup.php" class="btn btn-outline-primary btn-lg mt-3">Get Started</a>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ session_start();
               <h3 class="fs-5 card-title">Deep Learning Plan</h3>
               <p class="lead text-muted">Three hours per week</p>
               <p class="display-7 my-4 text-primary fw-bold">$239/month</p>
-              <a href="signup.html" class="btn btn-outline-primary btn-lg mt-3">Get Started</a>
+              <a href="signup.php" class="btn btn-outline-primary btn-lg mt-3">Get Started</a>
             </div>
           </div>
         </div>
